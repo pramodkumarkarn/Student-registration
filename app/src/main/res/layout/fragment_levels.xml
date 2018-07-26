@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proj4.rakshithramesh.myapplication.LevelsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/levelLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="@string/select_level"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/levelLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/lowerRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/lower" />
+            <!--android:onClick="onRadioButtonClicked"-->
+
+
+            <RadioButton
+                android:id="@+id/upperRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/upper" />
+            <!--android:onClick="onRadioButtonClicked"-->
+
+
+            <RadioButton
+                android:id="@+id/gradRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/graduate" />
+            <!--android:onClick="onRadioButtonClicked"-->
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/levelLabel"
+            android:layout_below="@+id/levelLabel"
+            android:layout_marginTop="119dp"
+            android:text="@string/select_time"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/startTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/startTimeValue"
+            android:layout_alignBottom="@+id/startTimeValue"
+            android:layout_alignStart="@+id/radioGroup"
+            android:text="@string/start_time"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/startTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeLabel"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/startTimeLabel"
+            android:ems="10"
+            android:hint="@string/_0800"
+            android:inputType="time" />
+
+        <TextView
+            android:id="@+id/endTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/startTimeLabel"
+            android:layout_below="@+id/startTimeValue"
+            android:layout_marginTop="38dp"
+            android:text="@string/end_time"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/endTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/startTimeValue"
+            android:layout_below="@+id/startTimeValue"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="@string/_2030"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/endTimeValue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:text="@string/search"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

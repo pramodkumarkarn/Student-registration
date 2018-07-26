@@ -1,0 +1,306 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addClassLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proj4.rakshithramesh.myapplication.AddCourseFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="385dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/titleRow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/firstName"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/titleValue"
+                    android:padding="5dp"
+                    android:text="@string/title"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/titleValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/depatmentRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/departmentName"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/departmentValue"
+                    android:padding="5dp"
+                    android:text="@string/department"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/departmentValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/instructorRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/instructorField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/instructorValue"
+                    android:padding="5dp"
+                    android:text="@string/instructor"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/instructorValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/scheduleRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/scheduleNoField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@+id/scheduleNoValue"
+                    android:padding="5dp"
+                    android:text="@string/schedule_no"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/scheduleNoValue"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/unitsRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/unitsField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/unitsValue"
+                    android:padding="5dp"
+                    android:text="@string/units"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/unitsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|phone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/roomFieldRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/roomField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/roomValue"
+                    android:padding="5dp"
+                    android:text="@string/room"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <EditText
+                    android:id="@+id/roomValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|phone" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/startTimeFieldRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/startTimeField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/startTimeValue"
+                    android:padding="5dp"
+                    android:text="@string/start_time"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <EditText
+                    android:id="@+id/startTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|phone" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endTimeFieldRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/endTimeField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/endTimeValue"
+                    android:padding="5dp"
+                    android:text="@string/end_time"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <EditText
+                    android:id="@+id/endTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|phone" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/prerequesiteFieldRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/prerequesiteField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/prerequesiteValue"
+                    android:padding="5dp"
+                    android:text="@string/prerequesite"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <EditText
+                    android:id="@+id/prerequesiteValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|phone" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/descriptionFieldRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/descriptionField"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:labelFor="@id/descriptionValue"
+                    android:padding="5dp"
+                    android:text="@string/room"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <EditText
+                    android:id="@+id/descriptionValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text|phone" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:text="@string/add_class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+
+</android.support.constraint.ConstraintLayout>

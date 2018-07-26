@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_majors"
+        android:icon="@drawable/ic_major"
+        android:title="@string/majors_menu" />
+
+    <item
+        android:id="@+id/navigation_levels"
+        android:icon="@drawable/ic_level"
+        android:title="@string/level_and_time" />
+
+
+</menu>
